@@ -1,0 +1,175 @@
+
+*{
+    box-sizing: border-box
+}
+
+.clearfix{
+    clear: both; display: block; content: "";
+}
+
+body{
+    background-image: url("../../img/background7.jpg");
+    margin: 0;
+    div{
+        &.back{
+            background-color: rgba(255,255,255,0.5);
+        }
+        width: 1100px; margin-left: auto; margin-right: auto; margin-top: 30px;
+        // border: 1px solid black;
+
+        //-----헤더-----
+        header{
+            h1{
+                margin: 0; color: rgb(245, 159, 173); margin-left: 10px; cursor: pointer;
+                font-family: 'Dancing Script', cursive; font-size: 60px;
+            }
+            h5{
+                text-align: right;
+                margin: 0;
+                font-size: 16px;
+                width: 30%;
+            }
+        }
+        //------메뉴바------
+        nav{
+            div.board{
+                a{
+                    color: #888;
+                    font-size: 20px;
+                    text-decoration: none;
+                    float: left;
+                    font-family: 'Dancing Script', cursive;
+                    padding: 20px;
+                    width: 50%;
+                    text-align: center;
+                    background-color: rgba(255,255,255,0.5);
+                    border: 1px solid rgba(255,255,255,1);
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: rgba(240,255,255,1);
+                        color: rgb(241, 180, 241);
+                    }
+                    &.mainMenu{
+                        color: pink;
+                        font-weight: 600;
+                        &:hover{
+                            background-color: rgba(240,255,255,0.5);
+                        }
+                    }
+                }
+            }
+            ul{
+                border-top: 2px solid Pink;
+                padding-top: 20px;
+                padding-left: 0;
+                li{
+                    list-style: none; float: left; margin-left: 10px; margin-right: 40px;
+                    cursor: pointer;
+                    font-family: 'Dancing Script', cursive;
+                    &.board{
+                        float: right;
+                        a{
+                            font-size: 20px;
+                        }
+                    }
+                    a{
+                        text-decoration: none; color: #888; font-size: 16px;
+                        &:hover{
+                            color: pink;
+                        }
+                        
+                        &[class^="active"]{
+                            color: pink; font-weight: 550;
+                        }
+                    }
+                }
+            }
+        }
+        //--------세션-----
+        section{
+            margin-top: 10px;
+            position: relative;
+            div{
+                border-bottom-left-radius: 40px;
+                border-bottom-right-radius: 40px;
+                // display: none; position: absolute; 
+                // border: 1px solid #e1e1e1;
+                // background-color: rgba(255,255,255,0.7);
+                &.aboutClass{
+                    display: block;
+                }
+                &.calClass{
+                    display: block;
+                }
+                &.timeClass{
+                    display: block;
+                }
+                &.etcClass{
+                    display: block;
+                }
+            }
+        }
+        footer{
+            position: fixed;
+            top: 0;
+            right: 20px;
+            text-align: center;
+            color: #888;
+            // div{
+            // }
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    body{
+        div{
+            width: 500px;
+            //-----헤더-----
+            // header{
+            //     h1{
+            //     }
+            // }
+            //------메뉴바------
+            nav{
+                div.board{
+                    a{
+                        font-size: 20px;
+                        padding: 10px;
+                        width: 50%;
+                    }
+                }
+                ul{
+                    li{
+                        &.board{
+                            float: right;
+                        }
+                        // a{
+                        //     }
+                        //     &[class^="active"]{
+                        //     }
+                        // }
+                    }
+                }
+            }
+            section{
+                width: 100%;
+                // div{
+                //     &.aboutClass{
+                //     }
+                //     &.calClass{
+                //     }
+                //     &.timeClass{
+                //     }
+                //     &.etcClass{
+                //     }
+                // }
+            }
+            footer{
+                display: none;
+                // div{
+                // }
+            }
+        }
+    }
+}

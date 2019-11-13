@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <!-- <button onclick="game()">뽑기</button> -->
+    <script>
+        var p = {p1:"자동차", p2:"냉장고", p3:"청소기"}
+        var pNum =[];
+        var outNum ={};
+        var num = 1;
+        for(var i = 0; i<3;i++){
+           pNum[i] = Math.floor(Math.random()*30);
+        }
+        console.log(pNum);
+        for(var j=0; j<30; j++){
+            game();
+            console.log("끝~~")
+        }
+        function game(){
+            var x = Math.floor(Math.random()*30);
+            if(x === outNum["n"+x]) {return game()}
+            for(var i = 0; i<3; i++){
+                if(x == pNum[0])console.log(num+"회 : "+p.p1 + "당첨");
+                else if(x == pNum[1])console.log(num+"회 : "+p.p2 + "당첨");
+                else if(x == pNum[2])console.log(num+"회 : "+p.p3 + "당첨");
+                else{console.log(num+"회 : "+"꽝")}
+            }
+            outNum["n"+x] = x;
+            console.log(30-num+"회 남음");
+            num += 1;
+        }
+    </script>
+</body>
+</html>

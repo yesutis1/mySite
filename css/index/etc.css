@@ -1,0 +1,88 @@
+body div section div.etcClass div {
+  display: block;
+  padding-left: 40px;
+  padding: 20px;
+}
+
+body div section div.etcClass div table {
+  width: 60%;
+}
+
+body div section div.etcClass div table tr td {
+  border: 1px solid red;
+}
+
+body div section div.etcClass div form {
+  padding-bottom: 20px;
+}
+
+body div section div.etcClass div form div {
+  width: 70%;
+  position: static;
+  margin: 0;
+  padding: 10px;
+}
+
+body div section div.etcClass div form div label {
+  color: #444;
+  font-weight: bold;
+}
+
+body div section div.etcClass div form div input {
+  font-size: 13px;
+  width: 22%;
+  margin-right: 4%;
+  padding: 5px;
+}
+
+body div section div.etcClass div form ul {
+  padding: 0;
+}
+
+body div section div.etcClass div form ul li {
+  list-style: none;
+}
+
+body div section div.etcClass div form ul li textarea {
+  width: 95%;
+  font-size: 17px;
+}
+
+body div section div.etcClass div form input.buttonQ {
+  margin-left: 10px;
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(200, 200, 200, 0.5);
+  color: #555;
+}
+
+@media screen and (max-width: 599px) {
+  body div section div.etcClass div {
+    display: block;
+    padding-left: 20px;
+  }
+  body div section div.etcClass div form div {
+    width: 90%;
+    height: 300px;
+  }
+  body div section div.etcClass div form div input {
+    width: 70%;
+    margin-right: 15%;
+    margin-top: 5%;
+    border: 1px solid lightgrey;
+  }
+  body div section div.etcClass div form ul li textarea {
+    margin-top: 3px;
+    margin-left: 5%;
+    width: 90%;
+    border: 1px solid lightgrey;
+  }
+  body div section div.etcClass div form input.button {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=etc.css.map */

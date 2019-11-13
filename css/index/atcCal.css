@@ -1,0 +1,138 @@
+body div section p {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+body div section div.calClass {
+  padding-top: 70px;
+}
+
+body div section div.calClass form {
+  margin-left: 40px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+body div section div.calClass form div.formDiv {
+  font-size: 0.8em;
+  display: block;
+  position: static;
+  margin-right: 10px;
+  width: 30%;
+  height: 580px;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  border: 1px solid #999;
+}
+
+body div section div.calClass form div.formDiv ul {
+  padding: 25px;
+}
+
+body div section div.calClass form div.formDiv ul li {
+  list-style: circle;
+}
+
+body div section div.calClass form div.formDiv ul p {
+  width: 300px;
+  color: darkgray;
+}
+
+body div section div.calClass form fieldset {
+  float: left;
+  position: static;
+  display: block;
+  width: 384px;
+  height: 580px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0;
+  background-color: lavender;
+}
+
+body div section div.calClass form fieldset input#resultBlank {
+  width: 99%;
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #999;
+  color: black;
+  font-size: 20px;
+}
+
+body div section div.calClass form fieldset input#resultBlank:hover {
+  background-color: white;
+}
+
+body div section div.calClass form fieldset input {
+  outline: 0;
+  text-decoration: none;
+  color: #444;
+  display: table-cell;
+  width: 84px;
+  height: 84px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 10px;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body div section div.calClass form fieldset input:hover {
+  background-color: aquamarine;
+  color: darkgreen;
+}
+
+body div section div.calClass form div.historyCalc {
+  margin-left: 10px;
+  padding: 10px;
+  display: block;
+  position: static;
+  width: 25%;
+  height: 580px;
+  float: left;
+  background-color: #fefefe;
+  border-radius: 15px;
+  border: 1px solid #999;
+  background-color: rgba(240, 255, 255, 0.7);
+}
+
+body div section div.calClass form div.historyCalc div {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+body div section div.calClass form div.historyCalc textarea {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  outline: 0;
+  font-size: 16px;
+  width: 100%;
+  height: 95%;
+}
+
+@media screen and (max-width: 599px) {
+  body div section div.calClass form div.formDiv {
+    width: 384px;
+    margin-bottom: 50px;
+    height: 100%;
+  }
+  body div section div.calClass form div.formDiv ul li {
+    font-size: 13px;
+  }
+  body div section div.calClass form div.formDiv ul P {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=atcCal.css.map */

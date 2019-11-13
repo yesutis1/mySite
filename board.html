@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choi's Homepage-board</title>
+    <link rel="stylesheet" href="./css/board/board.css">
+    <link rel="stylesheet" href="./css/board/menu1.css">
+    <link rel="stylesheet" href="./css/board/menu2.css">
+    <link rel="stylesheet" href="./css/board/menu4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400.300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- 구굴 웹폰트 -->
+</head>
+<body>
+    <div class="back">
+        <Header>
+            <h1 onclick="closeMenu()">Choi's Board</h1>
+        </Header>
+        <nav>
+            <div class="board"><a href="./">Main Home</a></div>
+            <div class="board"><a class="mainMenu" href="">Origami</a></div>
+            <span class="clearfix"></span>
+            <ul>
+                <li><a onclick="closeMenu()">Board_Home</a></li>
+                <li><a id="menuActive1" onclick="menu1()">Origami Gallery</a></li>
+                <li><a id="menuActive2" onclick="menu2()"></a></li>
+                <li><a id="menuActive3" onclick="menu3()"></a></li>
+                <li><a id="menuActive4" onclick="menu4()">Etc</a></li>
+            </ul>
+        </nav>
+        <span class="clearfix"></span>
+        <section>
+            <!-- menu1 Content -->
+            <div  id="menu1" class="block">
+                <!-- menuClass1 -->
+                <ul class="gallery">
+                    <li>
+                        <button class="hide" onclick="upPage()">2019 Year Works
+                            <div>
+                                <div>Pegasus<img src="./img/origami.jpg" alt=""></div>
+                                <div>Markhor<img src="./img/origami2.jpg" alt=""></div>
+                                <div>Dragon<img src="./img/origami3.jpg" alt=""></div>
+                                <div>Cavalier<img src="./img/origami4.jpg" alt=""></div>
+                                <div>Tiger<img src="./img/origami5.jpg" alt=""></div>
+                                <div>Phoenix<img src="./img/origami6.jpg" alt=""></div>
+                                <!-- <span class="clearfix"></span> -->
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="hide" onclick="upPage()">2018 Year Works
+                            <div>
+                                <div>Iron Robot<img src="./img/2018-1.jpg" alt=""></div>
+                                <div>Wolf<img src="./img/2018-2.jpg" alt=""></div>
+                                <div>buffalo<img src="./img/2018-3.jpg" alt=""></div>
+                                <div>Eagle<img src="./img/2018-4.jpg" alt=""></div>
+                                <div>Bear<img src="./img/2018-5.jpg" alt=""></div>
+                                <div>Smilodon<img src="./img/2018-6.jpg" alt=""></div>
+                                <div>Fantasy Dog<img src="./img/2018-7.jpg" alt=""></div>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="hide" onclick="upPage()">2017 Year Works
+                            <div>
+                                <div>Bear<img src="./img/2017-1.jpg" alt=""></div>
+                                <div>Eagle<img src="./img/2017-2.jpg" alt=""></div>
+                                <div>Rino<img src="./img/2017-3.jpg" alt=""></div>
+                                <div>Giraffe<img src="./img/2017-4.jpg" alt=""></div>
+                                <div>Hippo<img src="./img/2017-5.jpg" alt=""></div>
+                                <div>Knight<img src="./img/2017-6.jpg" alt=""></div>
+                                <div>Phoenix<img src="./img/2017-7.jpg" alt=""></div>
+                                <div>Phoenix Proto<img src="./img/2017-8.jpg" alt=""></div>
+                                <div>Cobra<img src="./img/2017-9.jpg" alt=""></div>
+                                <div>Chimera<img src="./img/2017-10.jpg" alt=""></div>
+                                <div>Lion<img src="./img/2017-11.jpg" alt=""></div>
+                                <div>Hyun Mu(Black Turtle)<img src="./img/2017-12.jpg" alt=""></div>
+                                <div>Crocodile<img src="./img/2017-13.jpg" alt=""></div>
+                                <div>--<img src="" alt=""></div>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu2 -->
+            <div  id="menu2" class="block">
+                <!-- menuClass2 -->
+                <div>None</div>
+            </div>
+
+            <!-- menu3 -->
+            <div  id="menu3" class="block">
+                <!-- menuClass3 -->
+                <div>None~~</div>
+            </div>
+
+            <!-- menu4 -->
+            <div  id="menu4" class="block">
+                <!-- menuClass4 -->
+                <div>Random Catch</div>
+                <button class="etcBtn">Game 1
+                    <div>
+                        <p id="playing">
+                        <div onclick="startGames()">게임 시작</div>
+                        <canvas id="canvas" width="440" height="440"></canvas><br>
+                        <div class="controll">
+                            <a type="button" onclick="moveUp()">상</a><br>
+                            <a type="button" onclick="moveLeft()">좌</a>
+                            <a type="button" onclick="moveRight()">우</a><br>
+                            <a type="button" onclick="moveDown()">하</a><br>
+                        </div>
+                    </div>
+                </button>
+                <!-- <button class="etcBtn">Game 2
+                    <div>
+                        <div>와아아아</div>
+                        <canvas id="canvasG2" width="300" height="300"></canvas><br>
+                    </div>
+                </button> -->
+
+            </div>
+        </section>
+        <span class="clearfix"></span>
+
+        <footer>
+            <p id="footer"></p>      
+        </footer>
+    </div>
+    <script src="./js/board/board.js"></script>
+    <script src="./js/board/footer.js"></script>
+    <script src="./js/board/menu1.js"></script>
+    <script src="./js/board/menu2.js"></script>
+    <script src="./js/board/menu4.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+</body>
+</html>
+
+
+
+
+
+
+<!-- prepare(){
+    this.context.fillStyle = "#888"
+    this.context.fillRect(0,0,440,440);
+    this.context.beginPath();
+    this.context.fillStyle = "white";
+    this.context.fillRect(145,300,150,80);
+    this.context.textAlign = "center";
+    this.context.font = "60px arial";
+    this.context.fillStyle = "white";
+    this.context.fillText("Random Catch",220,200);
+    this.context.font = "20px arial";
+    this.context.fillStyle = "#333";
+    this.context.fillText("Start Game",220,350);
+}, -->

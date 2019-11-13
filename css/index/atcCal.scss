@@ -1,0 +1,148 @@
+body{
+    div{
+        section{
+            p{
+                text-align: center;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            div{
+                &.calClass{
+                    padding-top: 70px;
+                    form{
+                        margin-left: 40px;
+                        margin-bottom: 50px;
+                        width: 100%;
+                        div.formDiv{
+                            font-size: 0.8em;
+                            display: block;
+                            position: static;
+                            margin-right: 10px;
+                            width: 30%;
+                            height: 580px;
+                            float: left;
+                            // background-color: #fefefe;
+                            background-color: rgba(255,255,255,0.7);
+                            border-radius: 15px;
+                            border: 1px solid #999;
+                            ul{
+                                padding: 25px;
+                                li{
+                                    list-style: circle;
+                                }
+                                p{
+                                    width: 300px;
+                                    color:darkgray;
+                                }
+                            }
+                        }
+                        fieldset{
+                            float: left;
+                            position: static;
+                            display: block;
+                            width: 384px; height: 580px;
+                            border-radius: 15px;
+                            padding: 10px;
+                            margin: 0;
+                            background-color: lavender;
+                            input#resultBlank{
+                                width: 99%; height: 100px;
+                                border-top-left-radius: 10px;
+                                border-top-right-radius: 10px;
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                                border: 1px solid #999;
+                                color: black;
+                                font-size: 20px;
+                                &:hover{
+                                    background-color: white;
+                                }
+                            }
+                            input{
+                                outline: 0;
+                                text-decoration: none; color: #444;
+                                display: table-cell;
+                                width: 84px; height: 84px;
+                                text-align: center;
+                                vertical-align: middle;
+                                background-color: white;
+                                border: 1px solid #999;
+                                border-radius: 10px;
+                                margin: 3px;
+                                cursor: pointer;
+                                font-size: 20px;
+                                float: left;
+                                box-sizing: border-box;
+                                &:hover{
+                                    background-color: aquamarine;
+                                    color: darkgreen;
+                                }
+                            }                            
+                        }
+                        div.historyCalc{
+                            margin-left: 10px;
+                            padding: 10px;
+                            display: block;
+                            position: static;
+                            width: 25%;
+                            height: 580px;
+                            float: left;
+                            background-color: #fefefe;
+                            border-radius: 15px;
+                            border: 1px solid #999;
+                            background-color: rgba(240,255,255,0.7);
+                            div{
+                                display: block;
+                                font-size: 18px;
+                                font-weight: 600;
+                            }
+                            textarea{
+                                background-color: rgba(255,255,255,0.7);
+                                border-radius: 15px;
+                                outline: 0;
+                                font-size: 16px;
+                                width: 100%;
+                                height: 95%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px){
+    body{
+        div{
+            section{
+                div{
+                    &.calClass{
+                        form{
+                            div.formDiv{
+                                width: 384px;
+                                margin-bottom: 50px;
+                                height: 100%;
+                                ul{
+                                    li{
+                                        font-size: 13px;
+                                    }
+                                    P{
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                            // fieldset{
+                            //     input#resultBlank{
+                            //     }
+                            //     input{
+                            //     }
+                                
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+body {
+  background-image: url("../../img/background7.jpg");
+  margin: 0;
+}
+
+body div {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+body div.back {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+body div header h1 {
+  margin: 0;
+  color: #f59fad;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+}
+
+body div header h5 {
+  text-align: right;
+  margin: 0;
+  font-size: 16px;
+  width: 30%;
+}
+
+body div nav div.board a {
+  color: #888;
+  font-size: 20px;
+  text-decoration: none;
+  float: left;
+  font-family: 'Dancing Script', cursive;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+body div nav div.board a:hover {
+  background-color: azure;
+  color: #f1b4f1;
+}
+
+body div nav div.board a.mainMenu {
+  color: pink;
+  font-weight: 600;
+}
+
+body div nav div.board a.mainMenu:hover {
+  background-color: rgba(240, 255, 255, 0.5);
+}
+
+body div nav ul {
+  border-top: 2px solid Pink;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+body div nav ul li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+  margin-right: 40px;
+  cursor: pointer;
+  font-family: 'Dancing Script', cursive;
+}
+
+body div nav ul li.board {
+  float: right;
+}
+
+body div nav ul li.board a {
+  font-size: 20px;
+}
+
+body div nav ul li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 16px;
+}
+
+body div nav ul li a:hover {
+  color: pink;
+}
+
+body div nav ul li a[class^="active"] {
+  color: pink;
+  font-weight: 550;
+}
+
+body div section {
+  margin-top: 10px;
+  position: relative;
+}
+
+body div section div {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+body div section div.aboutClass {
+  display: block;
+}
+
+body div section div.calClass {
+  display: block;
+}
+
+body div section div.timeClass {
+  display: block;
+}
+
+body div section div.etcClass {
+  display: block;
+}
+
+body div footer {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  text-align: center;
+  color: #888;
+}
+
+@media screen and (max-width: 599px) {
+  body div {
+    width: 500px;
+  }
+  body div nav div.board a {
+    font-size: 20px;
+    padding: 10px;
+    width: 50%;
+  }
+  body div nav ul li.board {
+    float: right;
+  }
+  body div section {
+    width: 100%;
+  }
+  body div footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

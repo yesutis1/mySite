@@ -1,0 +1,45 @@
+body div section div#menu4 {
+  text-align: center;
+}
+
+body div section div#menu4 button {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  outline: 0;
+  margin-bottom: 10px;
+}
+
+body div section div#menu4 button:hover {
+  border: 1px solid red;
+}
+
+body div section div#menu4 button.etcBtn div {
+  text-align: center;
+}
+
+body div section div#menu4 button.etcBtn div canvas {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #666;
+}
+
+body div section div#menu4 button.etcBtn div div a {
+  margin: 30px 30px;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  font-weight: bold;
+  border: 1px solid #555;
+}
+
+body div section div#menu4 button.etcBtn div div a:hover {
+  background-color: #666;
+  color: white;
+}
+
+body div section div#menu4 button.etcBtn:focus div {
+  display: block;
+}
+/*# sourceMappingURL=menu4.css.map */

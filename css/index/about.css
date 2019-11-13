@@ -1,0 +1,156 @@
+body div section ul#hide li {
+  display: none;
+  list-style: none;
+}
+
+body div section ul#hide li.addImg {
+  -webkit-animation-play-state: initial;
+          animation-play-state: initial;
+  display: block;
+  background-color: rgba(50, 50, 50, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body div section ul#hide li img {
+  width: 900px;
+  height: 450px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  border-radius: 5px;
+}
+
+body div section ul#hide li span {
+  font-size: 50px;
+  cursor: pointer;
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  color: white;
+}
+
+body div section ul#hide li span.left {
+  position: fixed;
+  top: 450px;
+  left: 18%;
+}
+
+body div section ul#hide li span.right {
+  position: fixed;
+  top: 450px;
+  left: 80%;
+}
+
+body div section ul#hide li span:hover {
+  font-weight: bold;
+}
+
+body div section div {
+  display: none;
+  margin-top: 0;
+}
+
+body div section div.aboutClass div {
+  display: block;
+}
+
+body div section div.aboutClass div.aboutMe {
+  border-right: none;
+  margin-right: 0;
+}
+
+body div section div.aboutClass div.aboutMe ul {
+  padding-left: 40px;
+}
+
+body div section div.aboutClass div.aboutMe ul li {
+  list-style: none;
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body div section div.aboutClass div.aboutMe ul li p {
+  color: #555;
+  margin: 0;
+  font-size: 13px;
+}
+
+body div section div.aboutClass div.aboutMe ul ul {
+  border: none;
+}
+
+body div section div.aboutClass div.aboutMe ul ul li {
+  color: #555;
+  font-size: 13px;
+  padding: 10px;
+}
+
+body div section div.aboutClass div.aboutMe ul ul li h4 {
+  color: black;
+  margin: 0;
+  border-top: 1px solid #999;
+  width: 80%;
+}
+
+body div section div.aboutClass div.aboutMe ul ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+body div section div.aboutClass div.aboutMe ul ul li a:hover {
+  color: hotpink;
+}
+
+body div section div.aboutClass div.aboutMe ul img {
+  width: 30%;
+  height: 200px;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 599px) {
+  body div section ul#hide li img {
+    width: 400px;
+    height: 200%;
+    top: 150px;
+  }
+  body div section ul#hide li span {
+    font-size: 30px;
+    top: 23%;
+    left: 90%;
+  }
+  body div section ul#hide li span.left {
+    position: fixed;
+    top: 340px;
+    left: 2%;
+  }
+  body div section ul#hide li span.right {
+    position: fixed;
+    top: 340px;
+    left: 95%;
+  }
+  body div section ul#hide li span:hover {
+    font-weight: bold;
+  }
+  body div section div.aboutClass div.aboutMe ul {
+    padding-left: 20px;
+  }
+  body div section div.aboutClass div.aboutMe ul img {
+    width: 40%;
+    height: 150px;
+  }
+  body div section div.aboutClass div.aboutMe ul ul li {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

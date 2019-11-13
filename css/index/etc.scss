@@ -1,0 +1,103 @@
+body{
+    div{
+        section{
+            div{
+                &.etcClass{
+                    div{
+                        display: block; padding-left: 40px;
+                        padding: 20px;
+                        table{
+                            width: 60%;
+                            tr{
+                                td{
+                                    border: 1px solid red;
+                                }
+                            }
+                        }
+                        form{padding-bottom: 20px;
+                            div{
+                                width: 70%;
+                                position: static;
+                                margin: 0;
+                                padding: 10px;
+                                label{
+                                    color: #444;
+                                    font-weight: bold;
+                                }
+                                input{
+                                    font-size: 13px;
+                                    width: 22%;
+                                    margin-right: 4%;
+                                    padding:5px;
+                                }
+                            }
+                            ul{
+                                padding: 0;
+                                li{
+                                    list-style: none;
+                                    textarea{
+                                        width: 95%;
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+                            input.buttonQ{
+                                margin-left: 10px;
+                                padding: 15px;
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                                font-size: 17px;
+                                border: none;
+                                border-radius: 5px;
+                                background-color: rgba(200,200,200,0.5);
+                                color: #555;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px){
+    body{
+        div{
+            section{
+                div{
+                    &.etcClass{
+                        div{
+                            display: block; padding-left: 20px;
+                            
+                            form{
+                                div{
+                                    width: 90%;
+                                    height: 300px;
+                                    input{
+                                        width: 70%;
+                                        margin-right: 15%;
+                                        margin-top: 5%;
+                                        border: 1px solid lightgrey;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        textarea{
+                                            margin-top: 3px;
+                                            margin-left: 5%;
+                                            width: 90%;
+                                            border: 1px solid lightgrey;
+                                        }
+                                    }
+                                }
+                                input.button{
+                                    margin-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choi's Homepage</title>
+    <link rel="stylesheet" href="./css/index/index.css">
+    <link rel="stylesheet" href="./css/index/about.css">
+    <link rel="stylesheet" href="./css/index/atcCal.css">
+    <link rel="stylesheet" href="./css/index/atcTime.css">
+    <link rel="stylesheet" href="./css/index/etc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400.300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- 구굴 웹폰트 -->
+</head>
+<body>
+    <div class="back">
+        <Header>
+            <h1 onclick="home()">Choi's Folio</h1>
+        </Header>
+
+        <span class="clearfix"></span>
+
+        <nav>
+            <div class="board"><a class="mainMenu" href="">Main Home</a></div>
+            <div class="board"><a href="./board.html">Origami</a></div>
+            <span class="clearfix"></span>
+            <ul>
+                <li><a onclick="home()">Home</a></li>
+                <li><a id="aboutActive" onclick="about()">About</a></li>
+                <li><a id="calActive" onclick="atcCal()">Calculator</a></li>
+                <li><a id="timeActive" onclick="atcTime()">Clock</a></li>
+                <li><a id="etcActive" onclick="etc()">Question</a></li>
+            </ul>
+        </nav>
+
+        <span class="clearfix"></span>
+
+        <section>
+            <!-- about 메뉴 -->
+            <div  id="about">
+                <!-- aboutClass -->
+                <div class="aboutMe">
+                    <ul>
+                        <li>About me</li>
+                        <ul>
+                            <li><i class="fa fa-adn fa-1x" style="color: darkviolet"></i> Name : 최주영(Choi Ju Young) </li>
+                            <li><i class="fa fa-address-book fa-1x" style="color: lightgreen"></i> Address : 경기도 수원시 권선구....</li>
+                            <li><i class="fa fa-birthday-cake fa-1x" style="color: lightcoral"></i> Birthday / Gender : 1997-03-03 / 남(male)</li>
+                            <li><i class="fa fa-mobile fa-1x" style="font-size: 1.3em; color:blue"></i> Tel : 010-2906-0591</li>
+                            <li><i class="fa fa-graduation-cap fa-1x" style="color: gold"></i> School : 수원공업고등학교 전기전자제어과 졸업(16.1)</li>
+                            <li><i class="fa fa-building fa-1x" style="color: green"></i> Company Career : 대한E 2015.09 ~ 2017.2 (전기배선)</li>
+                            <li><i class="fa fa-at fa-1x" style="color: lightseagreen"></i> Mail : yesutis1@naver.com</li>
+                            <li><i class="fa fa-certificate fa-1x" style="color:red"></i> Certificate : CCNA, 컴활 2급, 전기기능사, 생산자동화기능사, 운전면허 2종</li>                          
+                        </ul>
+                        <ul>
+                            <li><h4>Additional</h4></li>
+                            <ul>
+                                <li><i class="fa fa-twitter fa-1x" style="color: skyblue"></i> twitter : <a href="https://twitter.com/yesutis1">twitter.com/yesutis1</a></li>
+                                <li><i class="fa fa-instagram fa-1x" style="color: hotpink"></i> instagram : <a href="https://www.instagram.com/yesutis1/">instagram.com/yesutis1/</a></li>
+                                <li><i class="fa fa-facebook fa-1x" style="color: rgb(59, 185, 235)"></i> facebook : <a href="https://www.facebook.com/yesutis1">facebook.com/yesutis1</a></li>
+                                <li><i class="fa fa-paint-brush fa-1x" style="color: orange"></i> Hobby : Origami</li>
+                                <li><i class="fa fa-pencil fa-1x" style="color: green"></i> Activity : ...</li>
+                            </ul>
+                        </ul>
+                        <h3>Origami Gallery</h3>
+                        <img onclick="loadImg(1)" src="./img/origami.jpg"  alt="이미지입니다." title="이미지를 보려면 클릭">
+                        <img onclick="loadImg(2)" src="./img/origami2.jpg" alt="이미지입니다." title="이미지를 보려면 클릭">
+                        <img onclick="loadImg(3)" src="./img/origami3.jpg" alt="이미지입니다." title="이미지를 보려면 클릭">
+                        <img onclick="loadImg(4)" src="./img/origami4.jpg" alt="이미지입니다." title="이미지를 보려면 클릭">
+                        <img onclick="loadImg(5)" src="./img/origami5.jpg" alt="이미지입니다." title="이미지를 보려면 클릭">
+                        <img onclick="loadImg(6)" src="./img/origami6.jpg" alt="이미지입니다." title="이미지를 보려면 클릭">
+                        <!-- <img src="./img/origami6.jpg" style="cursor:pointer" onclick="window.open('./img/origami6.jpg','asdfo8or','scrollbars=yes,width=417,height=385,top=10,left=20');">  -->
+                    </ul>
+                </div>
+            </div>
+            <ul id="hide">
+                <li id="img1"><img src="./img/origami.jpg"  alt="" ><span onclick="closeImg(1)">&times;</span><span onclick="noImg(true)" class="left">&#60;</span><span onclick="rightImg(1)" class="right">&#62;</span></li>
+                <li id="img2"><img src="./img/origami2.jpg" alt="" ><span onclick="closeImg(2)">&times;</span><span onclick="leftImg(2)" class="left">&#60;</span><span onclick="rightImg(2)" class="right">&#62;</span></li>
+                <li id="img3"><img src="./img/origami3.jpg" alt="" ><span onclick="closeImg(3)">&times;</span><span onclick="leftImg(3)" class="left">&#60;</span><span onclick="rightImg(3)" class="right">&#62;</span></li>
+                <li id="img4"><img src="./img/origami4.jpg" alt="" ><span onclick="closeImg(4)">&times;</span><span onclick="leftImg(4)" class="left">&#60;</span><span onclick="rightImg(4)" class="right">&#62;</span></li>
+                <li id="img5"><img src="./img/origami5.jpg" alt="" ><span onclick="closeImg(5)">&times;</span><span onclick="leftImg(5)" class="left">&#60;</span><span onclick="rightImg(5)" class="right">&#62;</span></li>
+                <li id="img6"><img src="./img/origami6.jpg" alt="" ><span onclick="closeImg(6)">&times;</span><span onclick="leftImg(6)" class="left">&#60;</span><span onclick="noImg(false)" class="right">&#62;</span></li>
+            </ul>
+
+            <!-- atcCal 메뉴 -->
+            <div  id="atcCal">
+                <!-- calClass -->
+                <p>Calculator</p>
+                <form name="myForm" id="clac">
+                    <div class="formDiv">
+                        <ul>
+                            <h3>Calculator (계산기)</h3>
+                            <li>사칙연산 계산기를 만들다</li>
+                            <!--  -->
+                            <h3>사칙연산 계산기 사용방법</h3>
+                            <li>버튼을 이용하여 데이터를 입력</li>
+                            <li>"=" 버튼을 눌러 결과 값 출력</li>
+                            <li>"del" 버튼으로 최근 입력값 지우기</li>
+                            <li>"AC"버튼으로 전부 지우기</li>
+                            <!--  -->
+                            <h3>추가 기능</h3>
+                            <li>괄호 사용으로 조금 더 복잡한 사칙연산 가능</li>
+                            <li>계산 결과에서 데이터 입력하여 계속 연산 가능</li>
+                            <!--  -->
+                            <p>ex) 3 + 2 = 5 추가로 +2 를 하면 5+2 = 7이 반환</p>
+                            <li>계산 기록 저장</li>
+                            <p>계산 기록칸이기 때문에 계산 결과 출력시 텍스트는 사라집니다</p>
+                        </ul>    
+                    </div>
+                    <fieldset>
+                        <input type="text" id="resultBlank"  value="" placeholder="계산 내용과 결과">
+                        <input type="button" onclick="add('(')" value="(">
+                        <input type="button" onclick="add(')')" value=")">
+                        <input type="button" onclick="del()" value="del">
+                        <input type="button" onclick="add('/')" value="÷">
+                        <span class="clearfix"></span>
+                        <input type="button" onclick="add('7')" value="7">
+                        <input type="button" onclick="add('8')" value="8">
+                        <input type="button" onclick="add('9')" value="9">
+                        <input type="button" onclick="add('*')" value="×">
+                        <span class="clearfix"></span>
+                        <input type="button" onclick="add('4')" value="4">
+                        <input type="button" onclick="add('5')" value="5">
+                        <input type="button" onclick="add('6')" value="6">
+                        <input type="button" onclick="add('-')" value="-">
+                        <span class="clearfix"></span>
+                        <input type="button" onclick="add('1')" value="1">
+                        <input type="button" onclick="add('2')" value="2">
+                        <input type="button" onclick="add('3')" value="3">
+                        <input type="button" onclick="add('+')" value="+">
+                        <span class="clearfix"></span>
+                        <input type="button" onclick="add('0')" value="0">
+                        <input type="button" style="font-size: 30px" onclick="add('.')" value=".">
+                        <input type="button" onclick="add('')" value="AC">
+                        <input type="button" onclick="answer()" value="=">
+                    </fieldset>
+                    <div class="historyCalc">
+                        <div>계산 기록</div>
+                        <textarea id="resultCalc"></textarea>   
+                    </div>
+                </form>
+            </div>
+
+            <!-- atcTime 메뉴 -->
+            <div  id="atcTime">
+                <!-- timeClass -->
+                <p>Clock</p>
+                <div>
+                    <h4>Analog CLock</h4>
+                    <div>
+                        <canvas id="analogClock" width="400" height="400"></canvas>
+                    </div>
+                    <h4>Digital CLock</h4>
+                    <div>
+                        <canvas id="digitalClock" width="600" height="150" style="border-radius: 20px"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- etc 메뉴 -->
+            <div  id="etc">
+                <!-- etcClass -->
+                <div>
+                    <h3>Question</h3>
+                    <form id="questionForm" action="http://yesutis1.dothome.co.kr/db/insert.php" 
+                    method="get" onsubmit="return validateForm()">
+                        <div>
+                            <label for="title">Title</label>
+                            <input type="text" id="title" name="title" placeholder="질문의 제목(영어)">
+                            <label for="user_name">name</label>
+                            <input type="text" id="user_name" name="user_name" placeholder="이름(영어)">
+                            <label for="mail">E-mail</label>
+                            <input type="text" id="mail" name="mail" placeholder="이메일주소">
+                            <ul>
+                                <label for="content">Contents</label>
+                                <li>
+                                    <textarea name="content" id="content" cols="30" rows="10" 
+                                    placeholder="500자(영어) 이내로 질문 내용을 입력하세요." ></textarea>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit">보내기</button>
+                        <div>영어로 질문을 하셔야 확인이 가능합니다</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <span class="clearfix"></span>
+
+        <footer>
+            <p id="footer"></p>      
+        </footer>
+    </div>
+    <script src="./js/index/index.js"></script>
+    <script src="./js/index/footer.js"></script>
+    <script src="./js/index/about.js"></script>
+    <script src="./js/index/calc.js"></script>
+    <script src="./js/index/analogTime.js"></script>
+    <script src="./js/index/digitalTime.js"></script>
+    <script src="./js/index/etc.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+</body>
+</html>

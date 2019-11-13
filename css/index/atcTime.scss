@@ -1,0 +1,54 @@
+body{
+    div{
+        section{
+            div{
+                &.timeClass{
+                    // background-color: rgba(255,255,255,0.7);
+                    div{
+                        display: block;
+                        h3{
+                            text-align: right;
+                        }
+                        h4{
+                            margin-left: 20%;
+                            
+                        }
+                        div{
+                            position: static;
+                            text-align: center;
+                            canvas{
+                                background-color: none;
+                            }
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px){
+    body{
+        div{
+            section{
+                div{
+                    &.timeClass{
+                        // background-color: rgba(255,255,255,0.7);
+                        div{
+                            h4{    
+                                margin-left: 10%;                            
+                            }
+                            div{
+                                canvas{
+                                    width: 360px;
+                                }
+                                margin-bottom: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
